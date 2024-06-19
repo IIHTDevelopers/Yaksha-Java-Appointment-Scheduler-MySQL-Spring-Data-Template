@@ -35,7 +35,7 @@ public class DoctorBoundaryTest {
 	}
 
 	@Test
-	public void testNameNotNull() throws IOException {
+	public void doctorNameNotNull() throws IOException {
 		DoctorDTO doctorDTO = new DoctorDTO();
 		doctorDTO.setName(null);
 		Set<ConstraintViolation<DoctorDTO>> violations = validator.validate(doctorDTO);
