@@ -11,19 +11,10 @@ import com.appointment.entity.Doctor;
 
 @Repository
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
-	/**
-	 * Dynamic query: Finds doctors by their specialty, ordered by name.
-	 * 
-	 * @param specialty the specialty to search for
-	 * @return a list of doctors with the specified specialty, ordered by name
-	 */
-	List<Doctor> findBySpecialtyOrderByNameAsc(String specialty);
+	// write your code for method to find list of doctors by their specialty, ordered by name in ascending order
 
-	/**
-	 * Finds all doctors ordered by name.
-	 * 
-	 * @param pageable the pagination information
-	 * @return a Page of doctors ordered by name
-	 */
-	Page<Doctor> findAllByOrderByNameAsc(Pageable pageable);
+	
+	// write your code for method to find all doctors ordered by name in ascending order
+	// and it must return data in pages
+	
 }
