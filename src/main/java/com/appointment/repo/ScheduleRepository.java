@@ -9,12 +9,8 @@ import com.appointment.entity.Schedule;
 
 @Repository
 public interface ScheduleRepository extends JpaRepository<Schedule, Long> {
-	/**
-	 * Dynamic query: Finds schedules for a specific doctor on a specific day.
-	 * 
-	 * @param doctorId the ID of the doctor
-	 * @param day      the day to search for
-	 * @return a list of schedules for the specified doctor on the specified day
-	 */
-	List<Schedule> findByDoctorIdAndDay(Long doctorId, String day);
+
+	// write your code for dynamic query method to find an return a list of schedules for the specified doctor on the specified day
+
+	
 }
